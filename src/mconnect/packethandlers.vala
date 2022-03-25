@@ -43,6 +43,7 @@ class PacketHandlers : Object {
         var mousepad = MousepadHandler.instance ();
         var ping = PingHandler.instance ();
         var share = ShareHandler.instance ();
+        var clipboard = ClipboardHandler.instance ();
         var mpris = MprisHandler.instance ();
 
         hnd.@set (notification.get_pkt_type (), notification);
@@ -52,6 +53,7 @@ class PacketHandlers : Object {
         hnd.@set (ping.get_pkt_type (), ping);
         hnd.@set (share.get_pkt_type (), share);
         hnd.@set (mpris.get_pkt_type (), mpris);
+        hnd.@set (clipboard.get_pkt_type (), clipboard);
 
         return hnd;
     }

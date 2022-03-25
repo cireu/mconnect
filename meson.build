@@ -22,6 +22,7 @@ add_project_arguments(['--vapidir',
 # binaries
 mconnect_src = [
   'src/mconnect/main.vala',
+  'src/mconnect/clipboard.vala',
 	'src/mconnect/discovery.vala',
 	'src/mconnect/packet.vala',
 	'src/mconnect/device.vala',
